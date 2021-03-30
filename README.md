@@ -17,6 +17,10 @@ docker build --tag custom_caddy:0.0.1 .
 - Edit `docker-compose.yaml` and change `HASURA_GRAPHQL_ADMIN_SECRET` to something secure
 - `docker-compose up -d` - execute in directory where docker-compose.yaml 
 
+## Rate Limiting
+- In caddyfile change `rate_limit {remote.ip} 120r/m`
+- Default: 120 requets per min on ip address
+
 GraphQL endpoint will be `https://<your-domain.com>/v1/graphql`
 Console will be available on `https://<your-domain.com>/console`
 
