@@ -1,4 +1,6 @@
 # Caddy 2.0 with ratelimit - hasura graphql 
+![alt text](https://github.com/swapnil2525kangralkar/caddy_hasura_ratelimit/blob/master/rate_limit_hasura_1.gif)
+
 ## Pre-requisites
 
 - [Docker](https://docs.docker.com/install/)
