@@ -33,4 +33,6 @@ If you want to connect to an external/existing postgres database, replace `HASUR
 
 **Note: localhost will resolve to the container ip inside a docker container, not the host ip**
 
+## License
 
+[MIT](LICENSE)
