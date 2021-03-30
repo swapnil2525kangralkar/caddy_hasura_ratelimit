@@ -1,4 +1,5 @@
 # Caddy 2.0 with ratelimit - hasura graphql 
+## 120 requests/min demo :
 ![alt text](https://github.com/swapnil2525kangralkar/caddy_hasura_ratelimit/blob/master/rate_limit_hasura_1.gif)
 
 ## Pre-requisites
