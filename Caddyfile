@@ -1,0 +1,19 @@
+# replace :8080 with your domain name to get automatic https via LetsEncrypt
+{
+    auto_https disable_redirects
+}
+
+:8080 {
+  reverse_proxy graphql-engine:8080
+  # tls ./tls/localhost.pem /srv/tls/localhost-key.pem
+  route /v1/* {
+    # uri strip_prefix /v1
+    rate_limit {remote.ip} 120r/m
+
+    # # CORS headers
+    # header Access-Control-Allow-Origin *
+    # header Access-Control-Allow-Methods GET
+    # header Access-Control-Allow-Methods POST
+    # header Access-Control-Allow-Credentials true
+  }
+}
